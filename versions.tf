@@ -11,14 +11,16 @@ terraform {
   }
 }
 
- 
+terraform {
+  required_version = ">= 0.15"
 
   backend "remote" {
-    organization = "Aaronhood"
+    organization = "Aaronhood"  
 
     workspaces {
-      name = "learn-terraform-sentinel"
+      name = "learn-terraform-sentinel"  
     }
   }
-
 }
+ 
+
